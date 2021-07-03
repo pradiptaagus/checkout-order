@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pizza</h1>
+        <div class="pizza-container">
+            <div class="pizza-box">
+                <img src="img/pizza-1.jpeg" alt="Pizza 1">
+                <div class="desc">
+                    <p class="name">Pizza 1</p>
+                    <p class="price">$8</p>
+                    <div class="select">
+                        <input type="radio" name="pizza" id="pizza-1" value="8" onchange="choosePizza(this)">
+                        <label for="pizza-1">Choose</label>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza-box">
+                <img src="img/pizza-2.jpeg" alt="Pizza 2">
+                <div class="desc">
+                    <p class="name">Pizza 2</p>
+                    <p class="price">$10</p>
+                    <div class="select">
+                        <input type="radio" name="pizza" id="pizza-2" value="10" onchange="choosePizza(this)">
+                        <label for="pizza-2">Choose</label>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza-box">
+                <img src="img/pizza-2.jpeg" alt="Pizza 3">
+                <div class="desc">
+                    <p class="name">Pizza 3</p>
+                    <p class="price">$12</p>
+                    <div class="select">
+                        <input type="radio" name="pizza" id="pizza-3" value="12" onchange="choosePizza(this)">
+                        <label for="pizza-3">Choose</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Choose size</h1>
+        <div class="size-container">
+            <div class="item">
+                <div class="select">
+                    <input type="radio" name="size" id="small" value="1" onchange="chooseSize(this)">
+                    <label for="small">Small</label>
+                </div>
+            </div>
+            <div class="item">
+                <div class="select">
+                    <input type="radio" name="size" id="medium" value="2" onchange="chooseSize(this)" checked>
+                    <label for="medium">Medium</label>
+                </div>
+            </div>
+            <div class="item">
+                <input type="radio" name="size" id="large" value="3" onchange="chooseSize(this)">
+                <label for="large">Large</label>
+            </div>
+        </div>
+        <h1>Toppings</h1>
+        <div class="topping-container"></div>
+        
+        <h1>Price</h1>
+        <h2 class="total-price">$0</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
